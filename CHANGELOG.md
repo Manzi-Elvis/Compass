@@ -1,0 +1,10 @@
+# Changelog
+
+All notable changes are documented here.
+Format: [Keep a Changelog](https://keepachangelog.com). Versioning: [SemVer](https://semver.org).
+
+## [0.1.0] - 2026-11-05
+
+### Added
+
+- Monorepo foundation, git workflow and project documentation
