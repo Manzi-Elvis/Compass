@@ -23,3 +23,10 @@ Always `--no-ff` so branch history stays visible.
 1. Cut `release/vX.Y.Z` from `dev`
 2. Add `docs/releases/vX.Y.Z.md` and update `CHANGELOG.md`
 3. Merge into `main`, tag `vX.Y.Z`, merge back into `dev`
+
+## Automated checks
+
+Git hooks (Husky) run after `pnpm install`:
+
+- **pre-commit:** Prettier formats staged files (lint-staged)
+- **commit-msg:** commitlint enforces `type(scope): summary`, one line, max 72 characters
