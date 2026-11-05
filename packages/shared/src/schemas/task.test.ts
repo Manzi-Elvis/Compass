@@ -45,6 +45,15 @@ describe("updateTaskSchema", () => {
   it("rejects an unknown status", () => {
     expect(updateTaskSchema.safeParse({ status: "done" }).success).toBe(false);
   });
+
+  it("does not inject defaults into a partial update", () => {
+    const result = updateTaskSchema.parse({ status: "completed" });
+    expect(result).toEqual({ status: "completed" });
+  });
+
+  it("rejects unknown keys", () => {
+    expect(updateTaskSchema.safeParse({ userId: "x" }).success).toBe(false);
+  });
 });
 
 describe("paginationQuerySchema", () => {
