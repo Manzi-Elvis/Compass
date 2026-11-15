@@ -9,7 +9,7 @@ Format: [Keep a Changelog](https://keepachangelog.com). Versioning: [SemVer](htt
 
 - Monorepo foundation, git workflow and project documentation
 
-## [0.2.0] - 2026-11-05
+## [0.2.0] - 2026-11-15
 
 ### Added
 
