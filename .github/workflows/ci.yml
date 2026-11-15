@@ -27,7 +27,7 @@ jobs:
 
       # Reads the "packageManager" field from package.json, so CI uses
       # exactly the pnpm version you do.
-      - uses: pnpm/action-setup@v4
+      - uses: pnpm/action-setup@v6
 
       - uses: actions/setup-node@v4
         with:
